@@ -30,3 +30,14 @@
   color: #ffffff;
   font-weight: bold;
 }
+.small-device-nav-icons {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .small-device-nav-icons {
+    display: block;
+  }
+  .large-nav {
+    display: none;
+  }
+}
