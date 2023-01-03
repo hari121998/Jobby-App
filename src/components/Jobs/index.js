@@ -132,7 +132,7 @@ class Jobs extends Component {
   }
 
   searchBtnClicked = () => {
-    this.onSubmitSearchValue()
+    this.getJobsData()
   }
 
   onChangeSearchInput = event => {
