@@ -1,0 +1,10 @@
+.similar-jobs-con {
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.similar-jobs-con ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,16 @@
+.employment-con {
+  color: #ffffff;
+}
+.employment-con h4 {
+  font-weight: 500;
+}
+.employment-list-con {
+  list-style: none;
+  padding: 0;
+}
+.employment-list-con li {
+  margin: 20px 0;
+}
+.employment-con li label {
+  margin-left: 5px;
+}

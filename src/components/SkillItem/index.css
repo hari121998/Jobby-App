@@ -1,0 +1,9 @@
+.skill-item-con {
+  display: flex;
+  align-items: center;
+  width: 32%;
+  margin-bottom: 50px;
+}
+.skill-item-con h2 {
+  margin-left: 15px;
+}
