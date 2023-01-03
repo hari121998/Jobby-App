@@ -59,7 +59,6 @@ class Jobs extends Component {
     searchValue: '',
     listStatus: jobStatus.progress,
     jobsListData: [],
-    total: 0,
   }
 
   componentDidMount() {
@@ -81,7 +80,6 @@ class Jobs extends Component {
     const response = await fetch(jobApiUrl, options)
     if (response.ok) {
       const jobsData = await response.json()
-      const totalList = jobsData.total
       const updatedJobsData = jobsData.jobs.map(eachItem => ({
         title: eachItem.title,
         id: eachItem.id,
@@ -95,7 +93,6 @@ class Jobs extends Component {
       this.setState({
         jobsListData: updatedJobsData,
         listStatus: jobStatus.success,
-        total: totalList,
       })
     } else {
       this.setState({
@@ -168,8 +165,8 @@ class Jobs extends Component {
   )
 
   renderJobItemList = () => {
-    const {jobsListData, total} = this.state
-    if (total === 0) {
+    const {jobsListData} = this.state
+    if (jobsListData.length === 0) {
       return (
         <div className="failure-view-container">
           <img
